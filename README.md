@@ -17,7 +17,7 @@ Every repo on this page is a fork. I'm a tester, so I fork projects to poke at t
 
 I read the diff first. Then it gets a real run on my box: the build, the tests, and the thing the PR says it fixes. The result goes on the PR as a comment or a review: what I ran, with exit codes, what I did not run, and the box it ran on. Every post ends with a footer saying what the AI did and that I OK'd it.
 
-As of Oct 2026: code reviews on [204 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23), and [75 PRs I tested](https://github.com/morluto/rea/discussions/1435#discussioncomment-18855005) have merged.
+As of Oct 2026: [75 PRs I tested or wrote](https://github.com/morluto/rea/discussions/1435#discussioncomment-18855005) have merged.
 
 ### Write-ups
 
