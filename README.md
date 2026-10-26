@@ -26,7 +26,7 @@ As of Oct 2026: [75 PRs I tested or wrote](https://github.com/morluto/rea/discus
 - [My local model setup](https://github.com/morluto/rea/discussions/2006): Free local models reading REA's output on one 12 GB GPU.
 - [kuna, rsleigh and Ghidra on the same three files](https://github.com/morluto/rea/discussions/3858): First speed results, side by side.
 
-My test bench runs Nobara Linux, which is Fedora-based. It has Node 22, 24 and 26, Ghidra 12.1.4, and local models in llama.cpp.
+My test bench: Nobara Linux 44 (Fedora-based), Ryzen 9 5900X, 32 GB RAM, Radeon RX 6700 XT 12 GB. Node 22, 24 and 26, Ghidra 12.1.4, and local models in llama.cpp.
 
 ![Stats card, rebuilt weekly by lowlighter/metrics (MIT)](github-metrics.svg)
 
