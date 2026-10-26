@@ -16,6 +16,7 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_types: pull_request, issue
+          plugin_notable_skipped: knighthat/Kreate
           plugin_followup: yes
           plugin_followup_sections: user
           plugin_discussions: yes
