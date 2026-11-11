@@ -14,7 +14,7 @@ Mostly I point it at other people's projects, so most repos here are forks. One 
 
 | Project | What it is | What came of it |
 |---|---|---|
-| [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and [216 code reviews](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23) on PRs. [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged), like [website dark mode](https://github.com/morluto/rea/pull/1894) and [an Electron launch fix](https://github.com/morluto/rea/pull/2705) |
+| [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged), like [website dark mode](https://github.com/morluto/rea/pull/1894) and [an Electron launch fix](https://github.com/morluto/rea/pull/2705) |
 | [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [2 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
 | [kuna](https://github.com/Noelo-Lab/kuna) (Apache-2.0) | A decompiler built for agents, in Rust | Speed and memory tests on big binaries. [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23) |
 
@@ -33,6 +33,14 @@ Nothing of mine is in them yet.
 Claude reads the diff first. Then it gets a real run on my box: the build, the tests, and the thing the PR says it fixes. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on. Every post ends with a footer saying what the AI did and that I OK'd it.
 
 By 8 Nov 2026, [95 PRs Claude tested or wrote](https://github.com/morluto/rea/discussions/1435#discussioncomment-18855005) had merged on REA.
+
+### Code reviews
+
+Many of the reviews check what the review bots claimed, on a real box. Three of [the 216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23) that caught something before merge:
+
+- [34 of 35 bot findings didn't reproduce](https://github.com/morluto/rea/pull/4955#pullrequestreview-5566282834). Claude found a new bug instead: an upper-case Accept header broke the live session. It was fixed within half an hour.
+- [A bot said a new default would break REA's own check scripts](https://github.com/morluto/rea/pull/5660#pullrequestreview-5594834134). Claude replayed the scripts' checks, and they failed. The scripts were fixed before merge.
+- [A crafted ELF file hung the parser for up to 112 seconds](https://github.com/morluto/rea/pull/4837#pullrequestreview-5565089182). It still said the parse was complete. Fixed and retested.
 
 ### Write-ups
 
