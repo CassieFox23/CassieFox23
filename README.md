@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/wordmark.png" alt="Cassie Fox" width="600"></p>
+
 ## 🦊 Digging through binaries, one burrow at a time
 
 Hobbyist on one Linux box, with a few too many reverse-engineering tools. [Claude Code](https://github.com/anthropics/claude-code) does the hands-on work. It runs the tests, does the reverse engineering and drafts the write-ups. I pick what it looks at, steer it, and read every result before it goes up.
