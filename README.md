@@ -14,7 +14,7 @@ Mostly I point it at other people's projects, so most repos here are forks. One 
 
 | Project | What it is | What came of it |
 |---|---|---|
-| [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged), like [website dark mode](https://github.com/morluto/rea/pull/1894) and [an Electron launch fix](https://github.com/morluto/rea/pull/2705) |
+| [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged) |
 | [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [2 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
 | [kuna](https://github.com/Noelo-Lab/kuna) (Apache-2.0) | A decompiler built for agents, in Rust | Speed and memory tests on big binaries. [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23) |
 
@@ -30,7 +30,10 @@ I haven't added anything to these three yet.
 
 ### How the testing works
 
-Claude reads the diff first. Then it gets a real run on my box: the build, the tests, and the thing the PR says it fixes. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on. Every post ends with a footer saying what the AI did and that I OK'd it.
+1. Claude reads the diff.
+2. It gets a real run on my box: the build, the tests, and the thing the PR says it fixes.
+3. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on.
+4. Every post ends with a footer saying what the AI did and that I OK'd it.
 
 By 18 Nov 2026, [184 PRs I commented on](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged) had merged on REA.
 
