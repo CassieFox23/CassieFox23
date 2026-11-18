@@ -51,4 +51,14 @@ Many of the reviews check what the review bots claimed, on a real box. For examp
 - [Local models can drive REA over MCP](https://github.com/morluto/rea/discussions/3098): With about 10 tools in view, a 27B model got it right 3 of 3 times, and a 35B model 4 of 5.
 - [kuna, rsleigh and Ghidra on the same three files](https://github.com/morluto/rea/discussions/3858): First speed results, side by side.
 
-My test bench: Nobara Linux 44 (Fedora-based), Ryzen 9 5900X, 32 GB RAM, Radeon RX 6700 XT 12 GB. Node 22, 24 and 26, Ghidra 12.1.4 (Apache-2.0), and local models in llama.cpp (MIT).
+### My test bench
+
+| Part | What |
+|---|---|
+| OS | Nobara Linux 44 (Fedora-based) |
+| CPU | Ryzen 9 5900X |
+| RAM | 32 GB |
+| GPU | Radeon RX 6700 XT, 12 GB |
+| Node | 22, 24 and 26 |
+| Ghidra | 12.1.4 (Apache-2.0) |
+| Local models | llama.cpp (MIT) |
