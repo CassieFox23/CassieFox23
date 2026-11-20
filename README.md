@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/wordmark.png" alt="Cassie Fox" width="600"></p>
+<p align="center"><img src="docs/wordmark.png" alt="Cassie Fox" width="450"></p>
 
 ## 🦊 Digging through binaries, one burrow at a time
 
@@ -17,8 +17,11 @@ Mostly I point it at other people's projects, so most repos here are forks. One 
 | [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged) |
 | [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [2 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
 | [kuna](https://github.com/Noelo-Lab/kuna) (Apache-2.0) | A decompiler built for agents, in Rust | Speed and memory tests on big binaries. [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23) |
+| [blueprint](https://github.com/intincrab/blueprint) (MIT) | Animated diagrams from Claude Code | [Captions stay up long enough to read](https://github.com/intincrab/blueprint/pull/3). Merged. [A Fedora 44 test report](https://github.com/intincrab/blueprint/issues/1) |
+| [anur-living-map](https://github.com/HiAnur/anur-living-map) (MIT) | Claude Code plans a feature on a map, and the team signs off | [A security advisory](https://github.com/HiAnur/anur-living-map/security/advisories/GHSA-5chw-xqwq-f7jh). Side chats could read the whole home folder. Low severity. [The fix](https://github.com/HiAnur/anur-living-map/pull/407) shipped with me as co-author. [4 issues](https://github.com/HiAnur/anur-living-map/issues?q=is%3Aissue+author%3ACassieFox23), all closed |
+| [halorim](https://github.com/Ferhatmedtahar/halorim) (MIT) | A live wallpaper: a logo that glows along its edge | [1 bug report](https://github.com/Ferhatmedtahar/halorim/issues/12). The docs said too much about Wayland, and the image tests wrote over their own PNGs. Both fixed |
 
-Counts as of 18 Nov 2026.
+Counts as of 20 Nov 2026.
 
 ### Also forked
 
@@ -35,7 +38,7 @@ I haven't added anything to these three yet.
 3. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on.
 4. Every post ends with a footer saying what the AI did and that I OK'd it.
 
-By 18 Nov 2026, [184 PRs I commented on](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged) had merged on REA.
+By 20 Nov 2026, [194 PRs I commented on](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged) had merged on REA.
 
 ### Code reviews
 
