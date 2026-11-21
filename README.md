@@ -4,18 +4,20 @@
 
 Hobbyist on one Linux box, with a few too many reverse-engineering tools. [Claude Code](https://github.com/anthropics/claude-code) does the hands-on work. It runs the tests, does the reverse engineering and drafts the write-ups. I pick what it looks at, steer it, and read every result before it goes up.
 
-Mostly I point it at other people's projects, so most repos here are forks. One is my own.
+Mostly I point it at other people's projects, so most repos here are forks. Three are my own.
 
 ### My own
 
-[a10e-firmware](https://github.com/CassieFox23/a10e-firmware) (GPL-3.0): Why my locked Galaxy A10e won't take LineageOS. It's my phone, and I asked the questions. Claude read the stock firmware. Scripts and a full write-up, plus [a short version on REA's Discussions](https://github.com/morluto/rea/discussions/7872).
+- [a10e-firmware](https://github.com/CassieFox23/a10e-firmware) (GPL-3.0): Why my locked Galaxy A10e won't take LineageOS. It's my phone, and I asked the questions. Claude read the stock firmware. Scripts and a full write-up, plus [a short version on REA's Discussions](https://github.com/morluto/rea/discussions/7872).
+- [tab-a8-firmware](https://github.com/CassieFox23/tab-a8-firmware) (GPL-3.0): The same questions for my Galaxy Tab A8, the tablet that did take LineageOS. A static read of its stock firmware, side by side with the A10e.
+- [rea-board](https://github.com/CassieFox23/rea-board) (GPL-3.0): [A board](https://cassiefox23.github.io/rea-board/) of REA's open PRs and issues, sorted by the help each one needs. A script builds it every 3 hours, from public data only.
 
 ### What I point Claude at
 
 | Project | What it is | What came of it |
 |---|---|---|
 | [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged) |
-| [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [2 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
+| [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [3 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
 | [kuna](https://github.com/Noelo-Lab/kuna) (Apache-2.0) | A decompiler built for agents, in Rust | Speed and memory tests on big binaries. [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23) |
 | [blueprint](https://github.com/intincrab/blueprint) (MIT) | Animated diagrams from Claude Code | [Captions stay up long enough to read](https://github.com/intincrab/blueprint/pull/3). Merged. [A Fedora 44 test report](https://github.com/intincrab/blueprint/issues/1) |
 | [anur-living-map](https://github.com/HiAnur/anur-living-map) (MIT) | Claude Code plans a feature on a map, and the team signs off | [A security advisory](https://github.com/HiAnur/anur-living-map/security/advisories/GHSA-5chw-xqwq-f7jh). Side chats could read the whole home folder. Low severity. [The fix](https://github.com/HiAnur/anur-living-map/pull/407) shipped with me as co-author. [4 issues](https://github.com/HiAnur/anur-living-map/issues?q=is%3Aissue+author%3ACassieFox23), all closed |
@@ -66,5 +68,5 @@ Many of the reviews check what the review bots claimed, on a real box. For examp
 | RAM | 32 GB |
 | GPU | Radeon RX 6700 XT, 12 GB |
 | Node | 22, 24 and 26 |
-| Ghidra | 12.1.4 (Apache-2.0) |
+| Ghidra | 12.2 (Apache-2.0) |
 | Local models | llama.cpp (MIT) |
