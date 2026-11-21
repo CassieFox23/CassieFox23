@@ -75,7 +75,7 @@ Many of the reviews check what the review bots claimed, on a real box. For examp
 - [REA on Fedora-based Linux](https://github.com/morluto/rea/discussions/1435): Setup notes and gotchas.
 - [Benchmarks](https://github.com/morluto/rea/discussions/1998): REA's startup time on Node 22, 24 and 26, plus five local models compared.
 - [My local model setup](https://github.com/morluto/rea/discussions/2006): Free local models reading REA's output on one 12 GB GPU.
-- [Local models can drive REA over MCP](https://github.com/morluto/rea/discussions/3098): With about 10 tools in view, a 27B model got it right 3 of 3 times, and a 35B model 4 of 5.
+- [Local models can drive REA over MCP](https://github.com/morluto/rea/discussions/3098): A small test, with about 10 tools in view. A 27B model got it right 3 of 3 times, and a 35B model 4 of 5. Too few runs to call it a result.
 - [kuna, rsleigh and Ghidra on the same three files](https://github.com/morluto/rea/discussions/3858): First speed results, side by side.
 
 ### My test bench
