@@ -2,9 +2,11 @@
 
 ## 🦊 Digging through binaries, one burrow at a time
 
-Hobbyist on one Linux box, with a few too many reverse-engineering tools. [Claude Code](https://github.com/anthropics/claude-code) does the hands-on work. It runs the tests, does the reverse engineering and drafts the write-ups. I pick what it looks at, steer it, and read every result before it goes up.
+I find bugs in reverse-engineering tools by running them for real on one Linux box. A crafted ELF file that hung a parser for two minutes. An upper-case header that broke a live session. A new default that would have broken a project's own check scripts. Most of it is on [REA](https://github.com/morluto/rea), an open-source tool for reverse engineering with AI agents.
 
-Mostly I point it at other people's projects, so most repos here are forks. Three are my own.
+I pick what gets tested, steer the work, and read every result before it goes up. [Claude Code](https://github.com/anthropics/claude-code) does the hands-on part: it runs the tests, reads the binaries and drafts the write-ups. Every post says so in its footer.
+
+I keep a fork of each project I test, so most repos here are forks. Three are my own.
 
 ### My own
 
@@ -14,14 +16,31 @@ Mostly I point it at other people's projects, so most repos here are forks. Thre
 
 ### What I point Claude at
 
-| Project | What it is | What came of it |
-|---|---|---|
-| [REA](https://github.com/morluto/rea) (MIT) | Reverse engineering with AI agents | Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23). [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs. [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged) |
-| [rsleigh](https://github.com/ShaneBreazeale/rsleigh) (Apache-2.0) | A decompiler workbench in Rust | [Made output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8). [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14). [3 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23) |
-| [kuna](https://github.com/Noelo-Lab/kuna) (Apache-2.0) | A decompiler built for agents, in Rust | Speed and memory tests on big binaries. [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23) |
-| [blueprint](https://github.com/intincrab/blueprint) (MIT) | Animated diagrams from Claude Code | [Captions stay up long enough to read](https://github.com/intincrab/blueprint/pull/3). Merged. [A Fedora 44 test report](https://github.com/intincrab/blueprint/issues/1) |
-| [anur-living-map](https://github.com/HiAnur/anur-living-map) (MIT) | Claude Code plans a feature on a map, and the team signs off | [A security advisory](https://github.com/HiAnur/anur-living-map/security/advisories/GHSA-5chw-xqwq-f7jh). Side chats could read the whole home folder. Low severity. [The fix](https://github.com/HiAnur/anur-living-map/pull/407) shipped with me as co-author. [4 issues](https://github.com/HiAnur/anur-living-map/issues?q=is%3Aissue+author%3ACassieFox23), all closed |
-| [halorim](https://github.com/Ferhatmedtahar/halorim) (MIT) | A live wallpaper: a logo that glows along its edge | [1 bug report](https://github.com/Ferhatmedtahar/halorim/issues/12). The docs said too much about Wayland, and the image tests wrote over their own PNGs. Both fixed |
+**[REA](https://github.com/morluto/rea)** (MIT): Reverse engineering with AI agents.
+- Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23)
+- [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs
+- [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged), all small
+
+**[rsleigh](https://github.com/ShaneBreazeale/rsleigh)** (Apache-2.0): A decompiler workbench in Rust.
+- [Made its output the same every run](https://github.com/ShaneBreazeale/rsleigh/pull/8)
+- [Recovered two `ls` jump tables](https://github.com/ShaneBreazeale/rsleigh/pull/14)
+- [3 bug reports](https://github.com/ShaneBreazeale/rsleigh/issues?q=is%3Aissue+author%3ACassieFox23)
+
+**[kuna](https://github.com/Noelo-Lab/kuna)** (Apache-2.0): A decompiler built for agents, in Rust.
+- Speed and memory tests on big binaries
+- [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23)
+
+**[blueprint](https://github.com/intincrab/blueprint)** (MIT): Animated diagrams from Claude Code.
+- [Captions stay up long enough to read](https://github.com/intincrab/blueprint/pull/3), merged
+- [A Fedora 44 test report](https://github.com/intincrab/blueprint/issues/1)
+
+**[anur-living-map](https://github.com/HiAnur/anur-living-map)** (MIT): Claude Code plans a feature on a map, and the team signs off.
+- [A security advisory](https://github.com/HiAnur/anur-living-map/security/advisories/GHSA-5chw-xqwq-f7jh): side chats could read the whole home folder. Low severity
+- [The fix](https://github.com/HiAnur/anur-living-map/pull/407) shipped with me as co-author
+- [4 issues](https://github.com/HiAnur/anur-living-map/issues?q=is%3Aissue+author%3ACassieFox23), all closed
+
+**[halorim](https://github.com/Ferhatmedtahar/halorim)** (MIT): A live wallpaper, a logo that glows along its edge.
+- [1 bug report](https://github.com/Ferhatmedtahar/halorim/issues/12): the docs said too much about Wayland, and the image tests wrote over their own PNGs. Both fixed
 
 Counts as of 20 Nov 2026.
 
@@ -31,7 +50,7 @@ Counts as of 20 Nov 2026.
 - [abtop](https://github.com/graykode/abtop) (MIT): A monitor for AI coding agents.
 - [lot-map](https://github.com/alexeyw/lot-map) (MIT): A live map of what Claude Code is doing.
 
-I haven't added anything to these three yet.
+Forks I'm trying out. Nothing from me has gone upstream in these yet.
 
 ### How the testing works
 
@@ -40,13 +59,13 @@ I haven't added anything to these three yet.
 3. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on.
 4. Every post ends with a footer saying what the AI did and that I OK'd it.
 
-By 20 Nov 2026, [194 PRs I commented on](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged) had merged on REA.
+By 20 Nov 2026 I had commented on [615 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23) on REA. [194 have merged](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged), and [171 are still open](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Aopen).
 
 ### Code reviews
 
 Many of the reviews check what the review bots claimed, on a real box. For example, three of [the 216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23) where a review caught something before merge:
 
-- [34 of 35 bot findings didn't reproduce](https://github.com/morluto/rea/pull/4955#pullrequestreview-5566282834). Claude found a new bug instead: an upper-case Accept header broke the live session. It was fixed within half an hour.
+- [Claude re-checked all 35 bot review threads](https://github.com/morluto/rea/pull/4955#pullrequestreview-5566282834). The author had marked 33 as fixed, and those fixes held. One real gap was left. Claude also found a new bug: an upper-case Accept header broke the live session. It was fixed within half an hour.
 - [A bot said a new default would break REA's own check scripts](https://github.com/morluto/rea/pull/5660#pullrequestreview-5594834134). Claude replayed the scripts' checks, and they failed. The scripts were fixed before merge.
 - [A crafted ELF file hung the parser for up to 112 seconds](https://github.com/morluto/rea/pull/4837#pullrequestreview-5565089182). The parser still reported the parse as complete. Fixed and retested.
 
