@@ -6,13 +6,14 @@ I find bugs in reverse-engineering tools by running them for real on one Linux b
 
 I pick what gets tested, steer the work, and read every result before it goes up. [Claude Code](https://github.com/anthropics/claude-code) does the hands-on part: it runs the tests, reads the binaries and drafts the write-ups. Every post says so in its footer.
 
-I keep a fork of each project I test, so most repos here are forks. Three are my own.
+I keep a fork of each project I test, so most repos here are forks. Four are my own.
 
 ### My own
 
 - [a10e-firmware](https://github.com/CassieFox23/a10e-firmware) (GPL-3.0): Why my locked Galaxy A10e won't take LineageOS. It's my phone, and I asked the questions. Claude read the stock firmware. Scripts and a full write-up, plus [a short version on REA's Discussions](https://github.com/morluto/rea/discussions/7872).
 - [tab-a8-firmware](https://github.com/CassieFox23/tab-a8-firmware) (GPL-3.0): The same questions for my Galaxy Tab A8, the tablet that did take LineageOS. A static read of its stock firmware, side by side with the A10e.
 - [rea-board](https://github.com/CassieFox23/rea-board) (GPL-3.0): [A board](https://cassiefox23.github.io/rea-board/) of REA's open PRs and issues, sorted by the help each one needs. A script builds it every 3 hours, from public data only.
+- [furbish](https://github.com/CassieFox23/furbish) (GPL-3.0): Checks a GitHub PR or issue draft before it's posted, and makes the safe fixes. It never goes online. Every GitHub post of mine goes through it first.
 
 ### What I point Claude at
 
@@ -30,7 +31,7 @@ I keep a fork of each project I test, so most repos here are forks. Three are my
 - Speed and memory tests on big binaries
 - [2 bug reports](https://github.com/Noelo-Lab/kuna/issues?q=is%3Aissue+author%3ACassieFox23)
 
-**[blueprint](https://github.com/intincrab/blueprint)** (MIT): Animated diagrams from Claude Code.
+**[blueprint](https://github.com/intincrab/blueprint)** (MIT): Claude Code draws diagrams that move.
 - [Captions stay up long enough to read](https://github.com/intincrab/blueprint/pull/3), merged
 - [A Fedora 44 test report](https://github.com/intincrab/blueprint/issues/1)
 
@@ -42,7 +43,10 @@ I keep a fork of each project I test, so most repos here are forks. Three are my
 **[halorim](https://github.com/Ferhatmedtahar/halorim)** (MIT): A live wallpaper, a logo that glows along its edge.
 - [1 bug report](https://github.com/Ferhatmedtahar/halorim/issues/12): the docs said too much about Wayland, and the image tests wrote over their own PNGs. Both fixed
 
-Counts as of 20 Nov 2026.
+**[Pyrovue Runner](https://github.com/pyroenv/pyrovue-runner)** (MIT): Runs a Git repo with one command, in a throwaway Docker box.
+- [1 bug report](https://github.com/pyroenv/pyrovue-runner/issues/1): the box image can't build, because a folder it copies isn't in the repo
+
+Counts as of 21 Nov 2026.
 
 ### Also forked
 
@@ -59,7 +63,7 @@ Forks I'm trying out. Nothing from me has gone upstream in these yet.
 3. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on.
 4. Every post ends with a footer saying what the AI did and that I OK'd it.
 
-By 20 Nov 2026 I had commented on [615 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23) on REA. [194 have merged](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged), and [171 are still open](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Aopen).
+By 21 Nov 2026 I had commented on [628 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23) on REA. [211 have merged](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged), and [166 are still open](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Aopen).
 
 ### Code reviews
 
