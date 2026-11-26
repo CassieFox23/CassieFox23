@@ -19,7 +19,7 @@ I keep a fork of each project I test, so most repos here are forks. Four are my 
 
 **[REA](https://github.com/morluto/rea)** (MIT): Reverse engineering with AI agents.
 - Linux tests and code reviews on [216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23)
-- [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 24 of them bugs
+- [35 issues filed](https://github.com/morluto/rea/issues?q=is%3Aissue+author%3ACassieFox23), 25 of them bugs
 - [6 of my own PRs merged](https://github.com/morluto/rea/pulls?q=is%3Apr+author%3ACassieFox23+is%3Amerged), all small
 
 **[rsleigh](https://github.com/ShaneBreazeale/rsleigh)** (Apache-2.0): A decompiler workbench in Rust.
@@ -44,9 +44,9 @@ I keep a fork of each project I test, so most repos here are forks. Four are my 
 - [1 bug report](https://github.com/Ferhatmedtahar/halorim/issues/12): the docs said too much about Wayland, and the image tests wrote over their own PNGs. Both fixed
 
 **[Pyrovue Runner](https://github.com/pyroenv/pyrovue-runner)** (MIT): Runs a Git repo with one command, in a throwaway Docker box.
-- [1 bug report](https://github.com/pyroenv/pyrovue-runner/issues/1): the box image can't build, because a folder it copies isn't in the repo
+- [1 bug report](https://github.com/pyroenv/pyrovue-runner/issues/1): the box image couldn't build, because a folder it copies wasn't in the repo. Fixed
 
-Counts as of 21 Nov 2026.
+Counts as of 26 Nov 2026.
 
 ### Also forked
 
@@ -63,11 +63,11 @@ Forks I'm trying out. Nothing from me has gone upstream in these yet.
 3. The result goes on the PR as a comment or a review: what ran, with exit codes, what didn't, and the box it ran on.
 4. Every post ends with a footer saying what the AI did and that I OK'd it.
 
-By 21 Nov 2026 I had commented on [628 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23) on REA. [211 have merged](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged), and [166 are still open](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Aopen).
+By 26 Nov 2026 I had commented on [662 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23) on REA. [225 have merged](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Amerged), and [132 are still open](https://github.com/morluto/rea/pulls?q=is%3Apr+commenter%3ACassieFox23+-author%3ACassieFox23+is%3Aopen).
 
 ### Code reviews
 
-Many of the reviews check what the review bots claimed, on a real box. For example, three of [the 216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23) where a review caught something before merge:
+Many of the reviews check what the review bots claimed, on a real box. Here are three of [the 216 PRs](https://github.com/morluto/rea/pulls?q=is%3Apr+reviewed-by%3ACassieFox23+-author%3ACassieFox23) where a review caught something before merge:
 
 - [Claude re-checked all 35 bot review threads](https://github.com/morluto/rea/pull/4955#pullrequestreview-5566282834). The author had marked 33 as fixed, and those fixes held. One real gap was left. Claude also found a new bug: an upper-case Accept header broke the live session. It was fixed within half an hour.
 - [A bot said a new default would break REA's own check scripts](https://github.com/morluto/rea/pull/5660#pullrequestreview-5594834134). Claude replayed the scripts' checks, and they failed. The scripts were fixed before merge.
